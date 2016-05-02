@@ -1,7 +1,25 @@
 <div class='controller' ng-controller='HomeController as homeController'>
 
   <div class='box' layout='column' layout-align='center center'>
-    <h1>LoLStat</h1>
+    <h1>Champedex</h1>
+
+    <form name='saveSum' ng-submit='saveSum.$valid && homeController.saveSummonerIGN()'>
+      <md-input-container>
+        <md-select ng-model='homeController.summoner.region' placeholder='Region'>
+          <md-option ng-repeat='(key, pair) in homeController.regionList' value='{{key}}'>
+            {{key}}
+          </md-option>
+        </md-select>
+      </md-input-container>
+
+      <md-input-container>
+        <input ng-model='homeController.summoner.IGN' name='sumName' type='text' autocomplete='off' required placeholder='Summoner Name'>
+        <div ng-messages='saveSum.sumName.$error' ng-show='saveSum.sumName.$touched'>
+          <div ng-message='required'>This is required!</div>
+        </div>
+      </md-input-container>
+    </form>
+
   </div>
 
 </div>

@@ -1,7 +1,10 @@
 angular.module('App', [
     'ui.router',
     'ui.bootstrap',
+    'ngAnimate',
+    'ngAria',
     'ngMaterial',
+    'ngMessages',
     'ngStorage',
     'homeFactory',
     'summonerFactory'
