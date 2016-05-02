@@ -1,0 +1,29 @@
+{
+  "name": "champedex",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Chris Kuh <kuh_chris@yahoo.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/ckuh/champedex",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.5",
+    "angular-ui-router": "^0.2.18",
+    "angular-bootstrap": "^1.2.5",
+    "ngstorage": "^0.3.10",
+    "bootstrap": "^3.3.6",
+    "highcharts": "^4.2.3",
+    "highcharts-ng": "^0.0.11",
+    "angular-material": "^1.0.8"
+  }
+}
